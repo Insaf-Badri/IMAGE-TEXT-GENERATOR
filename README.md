@@ -16,8 +16,6 @@ This project addresses two fundamental challenges in computer vision and natural
 - [Datasets](#datasets)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Models](#models)
-- [Contributing](#contributing) 
 
 ## ✨ Features
 
@@ -81,47 +79,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Download pre-trained models
-python scripts/download_models.py
 ```
 
 ### Dependencies
-```bash
-pip install torch torchvision transformers
-pip install diffusers accelerate
-pip install datasets pillow matplotlib
-pip install nltk scikit-image
-pip install wandb  # For experiment tracking
-```
 
-## 💻 Usage
-
-### Image Captioning
-
-#### Training
-```bash
-# Fine-tune BLIP on COCO dataset
-python train_captioning.py \
-    --model blip \
-    --dataset coco \
-    --batch_size 32 \
-    --epochs 10 \
-    --lr 1e-4
-```
-
-#### Inference
-```python
-from models.captioning import BLIPCaptioner
-
-# Load fine-tuned model
-captioner = BLIPCaptioner.from_pretrained('./checkpoints/blip-coco-finetuned')
-
-# Generate caption
-image_path = "path/to/your/image.jpg"
-caption = captioner.generate_caption(image_path)
-print(f"Generated caption: {caption}")
-```
+## Usage
 
 ### Supported Architectures
 
@@ -136,14 +98,7 @@ print(f"Generated caption: {caption}")
 - **DreamBooth** adaptation
 - **LoRA** (Low-Rank Adaptation)
 
-```
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 
 ## Contact
  **Author**:  Badri insaf , Marwa Sghir
 
----
