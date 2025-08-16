@@ -2,7 +2,7 @@
 
 A comprehensive research project exploring the bidirectional relationship between vision and language through image captioning and personalized image generation using state-of-the-art deep learning models.
 
-## 🔬 Research Overview
+## 🔬 Research Overview:
 
 This project addresses two fundamental challenges in computer vision and natural language processing:
 
@@ -96,4 +96,5 @@ pip install -r requirements.txt
 
 ## Contact
  **Author**:  Badri insaf , Marwa Sghir
+
 
